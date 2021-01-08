@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+li {
+
+  display: inline;
+
+}
+
+li {
+
+  float: left;
+
+}
+
+a {
+
+  display: block;
+
+  padding: 8px;
+
+  background-color: #dddddd;
+
+}
+
+ul {
+
+  background-color: #dddddd;
+
+}
+
+li {
+
+  border-right: 1px solid #bbb;
+
+}
+
+ul {
+
+  position: fixed;
+
+  top: 0;
+
+  width: 100%;
+
+}
+
+li a {
+
+  display: block;
+
+  color: black;
+
+  text-align: center;
+
+  padding: 14px 16px;
+
+  text-decoration: none;
+
+}
+
+#para {
+
+ height: 30%;
+
+ width: 50%;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <nav>
+
+  <ul>
+
+  <li><a href="index.html" class="active">Home</a></li>
+
+  <li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<center>
+
+  <h1 style="font-family: courier; font-size: 500%; top: 20%;">Saksham Chaturvedi</h1>
+
+  <h3 style="font-family: courier; opacity: 0.5;">Someone you'd like knowing about..</h3>
+
+<section>
+
+  <img class="mySlides" src="assets/mee1.jpg" style="max-width: 55%; max-height: 75%;">
+
+  <img class="mySlides" src="assets/mee2.png" style="max-width: 55%; max-height: 75%;">
+
+  <img class="mySlides" src="assets/mee3.png" style="max-width: 55%; max-height: 75%;">
+
+</section>
+
+<div id="cont">
+
+<div id="para">
+
+<p style="font-family: courier; font-size: 200%;"> Hello, dear reader. My name is Saksham Chaturvedi.I'm a 14 year old boy living in India. My interest in programming woke up recently, and I've been trying to make something or the other almost every day,
+
+and, you see, This thing you're reading right now is made by me too, Great, ain't I?😂😎</p></div></div>
+
+</center>
+
+<script>
+
+var myIndex = 0;
+
+carousel();
+
+function carousel() {
+
+  var i;
+
+  var x = document.getElementsByClassName("mySlides");
+
+  for (i = 0; i < x.length; i++) {
+
+    x[i].style.display = "none";
+
+  }
+
+  myIndex++;
+
+  if (myIndex > x.length) {myIndex = 1}
+
+  x[myIndex-1].style.display = "block";
+
+  setTimeout(carousel, 5000);
+
+}
+
+</script>
+
+</body>
+
+</html>
